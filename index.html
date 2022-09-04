@@ -45,8 +45,8 @@
             <!-- a태그안에 이미지 넣으면 굳이 피규어로 안묶어도 된나요? 아니면 피규어 에이 이미지 이렇게 하나요? -->
             
             <ul class="category">
-                <li class="mene-new"><a href="#">
-                    <span class="new">NeW Releases</span>
+                <li class="menu-new-releases"><a href="#">
+                    <span class="new-releases">NeW Releases</span>
                     <!-- ul{list-style:none;} 이거 css에 적용시켜야 점이 사라짐-->
                     <!-- a {text-decoration: none;} 이거 css에 적용시켜야 밑줄 사라짐-->
                 </a></li>
@@ -85,7 +85,85 @@
                     <img src="./나이키 이미지/사람.svg" alt="마이페이지">
                 </a>
             </div>
+
+            <!-- 밑에 인트로로 꼭 감싸줘야하나요? -->
+            <div class="intro">  
+                <div class="intro-box">
+                    <figure class="intro-nike-pic">
+                        <!-- 백그라운드로 이미지 넣을것임 -->
+                    </figure>
+                </div>
+                <div class="intro-text-box">
+                    <h3>세계에 있는 모든 운동선수*에게 영감과 혁신을 가져다주는 나이키.</h3>
+                    <p>*만약 당신이 몸을 갖고 있다면, 당신은 운동선수 입니다.</p>
+                </div>
+            </div>
         </div>
+
+        <div class="toggle-button">
+            <input type="checkbox" id="toggle-slide">
+            <label for="toggle-slide">instock/upcoming</label>
+        </div>
+        <!-- 토글버튼 어케하누 -->
+
+        <p>Lastest in SNKRS</p>
+        <div class="snkrs">
+            <div class="snkrs1">
+                <figure class="snkrs1-pic">
+                    <a href="#">
+                        <img src="./나이키 이미지/SNKRS 1.jpg" alt="snkr1-pic">
+                    </a>
+                </figure>
+                <h4>에어 포스 1 로우 레트로</h4>
+                <p>Color of the Month</p>
+                <p>179,000원</p>
+            </div>
+            
+            <div class="snkrs2">
+                <figure class="snkrs2-pic">
+                    <a href="#">
+                        <img src="./나이키 이미지/SNKRS 2.jpg" alt="snkr2-pic">
+                    </a>
+                </figure>
+                <h4>ACG 에어 Mada</h4>
+                <p>Black and Celery Light Bone</p>
+                <p>159,000원</p>
+            </div>
+
+            <div class="snkrs3">
+                <figure class="snkrs3-pic">
+                    <a href="#">
+                        <img src="./나이키 이미지/SNKRS 3.jpg" alt="snkrs3-pic">
+                    </a>
+                </figure>
+                <h4>에어 포스 1 미드</h4>
+                <p>Chocolate</p>
+                <p>179,000원</p>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <span class="black-more">More</span>
+                    <span class="SNKRS">SNKRS</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-category">
+            <figure class="paper-background-pic"></figure>
+            <h1>What's New</h1>
+            <div class="new-items-pic">
+                <figure class="mom-pic1">
+                    <img src="./나이키 이미지/mother nike1.jpg" alt="mom1">
+                </figure>
+                <figure class="mom-pic2">
+                    <img src="./나이키 이미지/mother nike2.jpg" alt="mom2">
+                </figure>
+                <figure class="mom-pic3">
+                    <img src="./나이키 이미지/mother nike3.jpg" alt="mom3">
+                </figure>
+            </div>
+        </div>
+
     </header>
     
 </body>
