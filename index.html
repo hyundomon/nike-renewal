@@ -5,54 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나이키,Just Do It.</title>
-</head>
-<style>
-    ul{
-        list-style:none;
-    }
-    a {
-        text-decoration: none;
-    }
-
-    .best-container {
-        display: grid;
-        grid-template-columns: 304px 304px 304px 304px 304px 304px 304px 304px 304px;
-        grid-template-rows: 304px 304px 304px 304px 304px 304px 304px 304px;
-
-        /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
-        grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
-    }
-
-    .item {
-            border: 1px solid black;
-            background-color: gray;
+    <style>
+        ul{
+            list-style:none;
         }
-
-
-</style>
+        a {
+            text-decoration: none;
+        }
+    
+        .best-container {
+            display: grid;
+            grid-template-columns: repeat(8, 304px);
+            grid-template-rows: 304px 304px;
+    
+            /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
+            grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
+        }
+    
+        .item {
+                border: 1px solid black;
+                background-color: gray;
+            }
+    
+    
+    </style>
+</head>
 <body>
     <header>
         <div class="notice-container">
             <figure>
-                <img src="./나이키 이미지/arrow left.svg" alt="">
+                <img src="img/arrow left.svg" alt="">
             </figure>
 
             <div class="notice-text">
                 <figure>
-                     <img src="./나이키 이미지/경고아이콘.svg" alt="">
+                     <img src="img/경고아이콘.svg" alt="">
                 </figure>
                 <span>배송/반품 오프라인 서비스 (매장 픽업,매장 반품) 한시적 중단 안내</span>
             </div>
 
             <figure>
-                <img src="./나이키 이미지/arrow right.svg" alt="">
+                <img src="img/arrow right.svg" alt="">
             </figure>
         </div>
 
         <div class="header-navbar-category">
             <div class="nike-logo">
                 <a href="#">
-                    <img src="./나이키 이미지/Logo_NIKE.svg" alt="main-logo">
+                    <img src="img/Logo_NIKE.svg" alt="main-logo">
                 </a>
             </div>
 
@@ -67,53 +67,50 @@
                 </a></li>
 
                 <li class="menu-men"><a href="#">
-                    <span class="men">Men</span>
+                    Men
                 </a></li>
 
                 <li class="menu-women"><a href="#">
-                    <span class="women">Women</span>
+                    Women
                 </a></li>
 
                 <li class="menu-kids"><a href="#">
-                    <span class="kids">Kids</span>
+                    Kids
                 </a></li>
 
                 <li class="munu-sale"><a href="#">
-                    <span class="sale">Sale</span>
+                    Sale
                 </a></li>
             </ul>
 
             <div class="right-icons">
                 <a href="#">
-                    <img src="./나이키 이미지/돋보기.svg" alt="돋보기">
+                    <img src="img/돋보기.svg" alt="돋보기">
                 </a>
 
                 <a href="#">
-                    <img src="./나이키 이미지/하트.svg" alt="하트">
+                    <img src="img/하트.svg" alt="하트">
                 </a>
 
                 <a href="#">
-                    <img src="./나이키 이미지/장바구니.svg" alt="장바구니">
+                    <img src="img/장바구니.svg" alt="장바구니">
                 </a>
 
                 <a href="#">
-                    <img src="./나이키 이미지/사람.svg" alt="마이페이지">
+                    <img src="img/사람.svg" alt="마이페이지">
                 </a>
             </div>
     </header> 
 
         <!-- 밑에 인트로로 꼭 감싸줘야하나요? -->
         <div class="intro">  
-            <div class="intro-box">
-                <figure class="intro-nike-pic">
-                    <!-- 백그라운드로 이미지 넣을것임 -->
-                </figure>
+            <div class="intro-box"><!-- 여기에 백그라운드 -->
+                <div class="intro-text-box">
+                    <h3>세계에 있는 모든 운동선수*에게 영감과 혁신을 가져다주는 나이키.</h3>
+                    <p>*만약 당신이 몸을 갖고 있다면, 당신은 운동선수 입니다.</p>
+                </div>
             </div>
-            <div class="intro-text-box">
-                <h3>세계에 있는 모든 운동선수*에게 영감과 혁신을 가져다주는 나이키.</h3>
-                <p>*만약 당신이 몸을 갖고 있다면, 당신은 운동선수 입니다.</p>
-            </div>
-        </div>
+        </div> 
 
     <section class="snkrs">
         <div class="toggle-button">
@@ -128,7 +125,7 @@
                 <div class="snkrs1">
                     <figure class="snkrs1-pic">
                         <a href="#">
-                            <img src="./나이키 이미지/SNKRS 1.jpg" alt="snkr1-pic">
+                            <img src="img/SNKRS 1.jpg" alt="snkr1-pic">
                         </a>
                     </figure>
                     <h4>에어 포스 1 로우 레트로</h4>
@@ -139,7 +136,7 @@
                 <div class="snkrs2">
                     <figure class="snkrs2-pic">
                         <a href="#">
-                            <img src="./나이키 이미지/SNKRS 2.jpg" alt="snkr2-pic">
+                            <img src="img/SNKRS 2.jpg" alt="snkr2-pic">
                         </a>
                     </figure>
                     <h4>ACG 에어 Mada</h4>
@@ -150,7 +147,7 @@
                 <div class="snkrs3">
                     <figure class="snkrs3-pic">
                         <a href="#">
-                            <img src="./나이키 이미지/SNKRS 3.jpg" alt="snkrs3-pic">
+                            <img src="img/SNKRS 3.jpg" alt="snkrs3-pic">
                         </a>
                     </figure>
                     <h4>에어 포스 1 미드</h4>
@@ -174,106 +171,89 @@
         
         <div class="new-wrapper1">
             <button class="left-arrow">화살표</button>
-            <!-- 여기에 아이콘 넣으면 되나요? -->
-
-            <div class="new-items-pic">
-                <figure class="mom-pic1">
-                    <img src="./나이키 이미지/mother nike1.jpg" alt="mom1">
-                </figure>
-                <figure class="mom-pic2">
-                    <img src="./나이키 이미지/mother nike2.jpg" alt="mom2">
-                </figure>
-                <figure class="mom-pic3">
-                    <img src="./나이키 이미지/mother nike3.jpg" alt="mom3">
-                </figure>
-            </div>
-
-
             <button class="right-arrow">화살표</button>
             <!-- 여기에 아이콘?아니면 텍스트로 만든건 어케만드나요? -->
+            <!-- 여기에 아이콘 넣으면 되나요? -->
 
-            <div class="new-text">
-                <h3>엄마를 위한 나이키</h3>
-                <h4>엄마를 위한 여유로운 디자인으로 모든 활동을 자유롭게 경험해 보세요.</h4>
-                <button class="new-more">자세히 보기</button>
+            <div class="slide-wrapper">
+                <!-- 수정함이거 위에 스랄이드 랩퍼 -->
+                <ul class="slide-inner-container">
+                    <li class="new-items1-pic">
+                        <figure class="mom-pic1">
+                            <img src="img/mother nike1.jpg" alt="mom1">
+                        </figure>
+                        <figure class="mom-pic2">
+                            <img src="img/mother nike2.jpg" alt="mom2">
+                        </figure>
+                        <figure class="mom-pic3">
+                            <img src="img/mother nike3.jpg" alt="mom3">
+                        </figure>
+                        
+                        <div class="new-text">
+                            <h3>엄마를 위한 나이키</h3>
+                            <h4>엄마를 위한 여유로운 디자인으로 모든 활동을 자유롭게 경험해 보세요.</h4>
+                            <button class="new-more">자세히 보기</button>
+                        </div>
+                    </li>
+
+                    <!-- 이 뒤쪽으로 다음 슬라이드 li태그 이용해서 추가 -->
+                    
+                    <li class="new-itmes2-pic">
+                        <figure class="school-pic1">
+                            <img src="img/mother nike1.jpg" alt="mom1"> 
+                        </figure>
+                        <figure class="school-pic2">
+                            <img src="img/mother nike2.jpg" alt="mom2">
+                        </figure>
+                        <figure class="school-pic3">
+                            <img src="img/mother nike3.jpg" alt="mom3">
+                        </figure>
+                        
+                        <div class="new-text">
+                            <h3>나이키와 함께하는 새학기 새출발</h3>
+                            <h4>새로운 마음가짐으로 시작하는 새학기를 나이키와 함께 준비해 보세요!</h4>
+                            <button class="new-more">자세히 보기</button>
+                        </div>
+                    </li>
+
+                    <li class="new-items3-pic">
+                        <figure class="acg-pic1">
+                            <img src="img/mother nike1.jpg" alt="mom1">
+                        </figure>
+                        <figure class="acg-pic2">
+                            <img src="img/mother nike2.jpg" alt="mom2">
+                        </figure>
+                        <figure class="acg-pic3">
+                            <img src="img/mother nike3.jpg" alt="mom3">
+                        </figure>
+
+                        <div class="new-text">
+                            <h3>나이키와 함께하는 모험</h3>
+                            <h4>최고의 탐험을 위해 설계된 acg 컬렉션으로 친구들과 대담한 모험을 떠나보세요.</h4>
+                            <button class="new-more">자세히 보기</button>
+                        </div>
+                    </li>
+
+                    <li class="new-items4-pic">
+                        <figure class="fly-knit-pic1">
+                            <img src="img/mother nike1.jpg" alt="mom1">
+                        </figure>
+                        <figure class="fly-knit-pic2">
+                            <img src="img/mother nike2.jpg" alt="mom2">
+                        </figure>
+                        <figure class="fly-knnit-pic3">
+                            <img src="img/mother nike3.jpg" alt="mom3">
+                        </figure>
+        
+                        <div class="new-text">
+                            <h3>플라이니트 10주년 에디션</h3>
+                            <h4>에어맥스와 플라이니트와의 조합으로 탄생한 새로운 나이키를 만나보세요.</h4>
+                            <button class="new-more">자세히 보기</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-<!--
-        <div class="new-wrapper2">
-            <button class="left-arrow">화살표</button>
-
-            <div class="new-items-pic">
-                <figure class="school-pic1">
-                    <img src="./나이키 이미지/mother nike1.jpg" alt="mom1">
-                </figure>
-                <figure class="school-pic2">
-                    <img src="./나이키 이미지/mother nike2.jpg" alt="mom2">
-                </figure>
-                <figure class="school-pic3">
-                    <img src="./나이키 이미지/mother nike3.jpg" alt="mom3">
-                </figure>
-            </div>
-
-
-            <button class="right-arrow">화살표</button>
-
-            <div class="new-text">
-                <h3>나이키와 함께하는 새학기 새출발</h3>
-                <h4>새로운 마음가짐으로 시작하는 새학기를 나이키와 함께 준비해 보세요!</h4>
-                <button class="new-more">자세히 보기</button>
-            </div>
-        </div>
-
-        <div class="new-wrapper3">
-            <button class="left-arrow">화살표</button>
-
-            <div class="new-items-pic">
-                <figure class="acg-pic1">
-                    <img src="./나이키 이미지/mother nike1.jpg" alt="mom1">
-                </figure>
-                <figure class="acg-pic2">
-                    <img src="./나이키 이미지/mother nike2.jpg" alt="mom2">
-                </figure>
-                <figure class="acg-pic3">
-                    <img src="./나이키 이미지/mother nike3.jpg" alt="mom3">
-                </figure>
-            </div>
-
-
-            <button class="right-arrow">화살표</button>
-
-            <div class="new-text">
-                <h3>나이키와 함께하는 모험</h3>
-                <h4>최고의 탐험을 위해 설계된 acg 컬렉션으로 친구들과 대담한 모험을 떠나보세요.</h4>
-                <button class="new-more">자세히 보기</button>
-            </div>
-        </div>
-
-        <div class="new-wrapper4">
-            <button class="left-arrow">화살표</button>
-
-            <div class="new-items-pic">
-                <figure class="fly-knit-pic1">
-                    <img src="./나이키 이미지/mother nike1.jpg" alt="mom1">
-                </figure>
-                <figure class="fly-knit-pic2">
-                    <img src="./나이키 이미지/mother nike2.jpg" alt="mom2">
-                </figure>
-                <figure class="fly-knnit-pic3">
-                    <img src="./나이키 이미지/mother nike3.jpg" alt="mom3">
-                </figure>
-            </div>
-
-
-            <button class="right-arrow">화살표</button>
-
-            <div class="new-text">
-                <h3>플라이니트 10주년 에디션</h3>
-                <h4>에어맥스와 플라이니트와의 조합으로 탄생한 새로운 나이키를 만나보세요.</h4>
-                <button class="new-more">자세히 보기</button>
-            </div>
-        </div>
-    -->
     </section>
 
     <section class="best">
