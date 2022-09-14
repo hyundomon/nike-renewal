@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple grid</title>
+    <link rel="stylesheet" href="apple.css">
+
+    <style>
+        
+        .grid-wrapper {
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, auto);
+            row-gap: 38px;
+            column-gap: 34px;
+            margin-top: 68px;
+            margin-bottom: 73px;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+
+            grid-template-areas: 
+            "a1 b1 c1 d1"
+            "a2 b2 c2 d2"
+            "a3 b3 c3 d3"
+            "a4 b4 c4 d4"
+            "a5 b5 c5 d5"
+            "a6 b6 c6 d6"
+            "a7 b7 c7 d7"
+            "a8 b8 c8 d8"
+            "a9 b9 c9 d9"
+            ;
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-wrapper">
+
+<!-- item intoduce -->
+    <div class="item-ipad-pro">
+        <div class="item-ipad-pro-img">
+            <a href="#"><figure class="ipad-pro-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+        
+        <div class="item-text-box">
+            <h2>iPad Pro</h2>
+            <p>궁극의 iPad란<br>이런 것.</p>
+            <span class="price">₩999,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+    </div>    
+        <!-- !!!ㅁ밑에 마감디브 주의!! -->
+
+    <!-- ***위에 마감하는 div는 그리드-랩퍼꺼라서 맨 밑으로 내려줘야한다!!!작업 다 하고!!!*** -->
+    <div class="item-ipad-air">
+        <div class="item-ipad-air-img">
+            <a href="#"><figure class="ipad-air-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+        
+        <div class="item-text-box">
+            <p>New</p>
+            <h2>iPad Air</h2>
+            <p>강력하다.다채롭다.<br>경이롭다.</p>
+            <span class="price">₩779,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+    </div> 
+
+    <div class="item-ipad">
+        <div class="item-ipad-img">
+            <a href="#"><figure class="ipad-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+            
+        <div class="item-text-box">
+            <h2>iPad</h2>
+            <p>만족스러운 성능.<br>기분 좋은 가격.</p>
+            <span class="price">₩449,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+    </div>
+
+    <div class="item-ipad-mini">
+        <div class="item-ipad-mini-img">
+            <a href="#"><figure class="ipad-mini-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+            
+        <div class="item-text-box">
+            <h2>iPad mini</h2>
+            <p>메가급 성능.<br>크기만 미니.</p>
+            <span class="price">₩649,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+    </div>
+
+<!-- size -->
+    <div class="size-ipad-pro">
+        <h4>12.9 및 11</h4>
+        <p>32.7cm Liquid Retina
+            <br>XDR 디스플레이1
+            <br>27.9cm Liquid Retina 디스플레이1
+        </p>
+    </div>
+
+    <div class="size-ipad-air">
+        <h4>10.9</h4>
+        <p>27.5cm Liquid Retina 디스플레이1</p>
+    </div>
+
+    <div class="size-ipad">
+        <h4>10.2</h4>
+        <p>25.9cm Retina 디스플레이1</p>
+    </div>
+
+    <div class="size-ipad-mini">
+        <h4>8.3</h4>
+        <p>21.0cm Liquid Retina 디스플레이1</p>
+    </div>
+
+<!-- chip -->
+    <div class="chip-ipad-pro">
+        <figure class="chip-img"></figure>
+        <p>M1 칩</p>
+    </div>
+
+    <div class="chip-ipad-air">
+        <figure class="chip-img"></figure>
+        <p>M1 chip</p>
+    </div>
+    
+    <div class="chip-ipad">
+        <figure class="chip-img"></figure>
+        <p>A13 Bionic 칩</p>
+    </div>
+    
+    <div class="chip-ipad-mini">
+        <figure class="chip-img"></figure>
+        <p>A15 Bionic 칩</p>
+    </div>
+
+<!-- camera -->
+    <div class="camera-ipad-pro">
+        <figure class="camera-img"></figure>
+        <p>12MP 와이드 및 10MP
+            <br>울트라 와이드 후면 카메라
+        </p>
+    </div>
+
+    <div class="camera-ipad-air">
+        <figure class="camera-img"></figure>
+        <p>12MP 와이드 후면 카메라</p>
+    </div>
+
+    <div class="camera-ipad">
+        <figure class="camera-img"></figure>
+        <p>8MP 와이드 후면 카메라</p>
+    </div>
+
+    <div class="camera-ipad-pro">
+        <figure class="camera-img"></figure>
+        <p>12MP 와이드 후먼 카메라</p>
+    </div>
+    
+<!-- 12mp -->
+    <div class="12mp-ipad-pro">
+        <h4>12MP</h4>
+        <p>센터 스테이지 기술이 적용된
+            <br>TrueDepth 전면 카메라
+        </p>
+    </div>
+
+    <div class="12mp-ipad-air">
+        <h4>12MP</h4>
+        <p>센터 스테이지 기술이 적용된 울트라
+            <br>와이드 전면 카메라
+        </p>
+    </div>
+    
+    <div class="12mp-ipad">
+        <h4>12MP</h4>
+        <p>센터 스테이지 기술이 적용된 울트라
+            <br>와이드 전면 카메라
+        </p>
+    </div>
+
+    <div class="12mp-ipad-mini">
+        <h4>12MP</h4>
+        <p>센터 스테이지 기술이 적용된 울트라
+            <br>와이드 전면 카메라
+        </p>
+    </div>
+
+<!-- connector -->
+    <div class="connector-ipad-pro">
+        <figure class="connector-img"></figure>
+        <p>Thunderbolt/USB 4를 지원하는
+            <br>USB-C 커넥터
+        </p>
+    </div>
+
+    <div class="connector-ipad-air">
+        <figure class="connector-img"></figure>
+        <p>USB-C 커넥터</p>
+    </div>
+
+    <div class="connector-ipad">
+        <figure class="connector-img"></figure>
+        <p>Lighting 커넥터</p>
+    </div>
+
+    <div class="connector-ipad-mini">
+        <figure class="connector-img"></figure>
+        <p>USB-C 커넥터</p>
+    </div>
+
+<!-- cellula -->
+    <div class="cellula-ipad-pro">
+        <figure class="cellula-img"></figure>
+        <p>5G 셀룰러2</p>
+    </div>
+
+    <div class="cellula-ipad-air">
+        <figure class="cellula-img"></figure>
+        <p>5G 셀룰러2</p>
+    </div>
+
+    <div class="cellula-ipad">
+        <figure class="cellula-img"></figure>
+        <p>LTE 셀룰러2</p>
+    </div>
+
+    <div class="cellula-ipad-mini">
+        <figure class="cellula-img"></figure>
+        <p>5G 셀룰러2</p>
+    </div>
+
+<!-- pencil -->
+    <div class="pencil-ipad-pro">
+        <figure class="pelcil-img"></figure>
+        <p>Apple Pencil(2세대)과 호환</p>
+    </div>
+    
+    <div class="pencil-ipad-air">
+        <figure class="pelcil-img"></figure>
+        <p>Apple Pencil(2세대)과 호환</p>
+    </div>
+    
+    <div class="pencil-ipad">
+        <figure class="pelcil-img"></figure>
+        <p>Apple Pencil(1세대)과 호환</p>
+    </div>
+    
+    <div class="pencil-ipad-pro">
+        <figure class="pelcil-img"></figure>
+        <p>Apple Pencil(2세대)과 호환</p>
+    </div>
+
+<!-- keyboard -->
+    <div class="keyboard-ipad-pro">
+        <figure class="keyboard-img"></figure>
+        <p>Magic Keyboard 및
+            <br>Smart Keyboard Filio와
+            <br>호환
+        </p>
+    </div>
+
+    <div class="keyboard-ipad-air">
+        <figure class="keyboard-img"></figure>
+        <p>Magic Keyboard 및
+            <br>Smart Keyboard Filio와
+            <br>호환
+        </p>
+    </div>
+
+    <div class="keyboard-ipad">
+        <figure class="keyboard-img"></figure>
+        <p>Smart Keyboard와 호환</p>
+    </div>
+
+    <div class="keyboard-ipad-mini">
+        <figure class="keyboard-img"></figure>
+        <p>Bluetooth 키보드와 호환</p>
+    </div>
+    
+</div>  
+
+</body>
+</html>
