@@ -113,7 +113,7 @@
             </div>
         </div> 
 
-    <section class="snkrs">
+    <section id="snkrs">
         <div class="toggle-button">
             <input type="checkbox" id="toggle-slide">
             <label for="toggle-slide">instock/upcoming</label>
@@ -199,7 +199,7 @@
             </div>
     </section>
 
-    <section class="new">
+    <section id="new">
         <figure class="paper-background-pic"></figure>
 
         <h2 class="new-title">What's New</h2>
@@ -210,9 +210,11 @@
             <!-- 여기에 아이콘?아니면 텍스트로 만든건 어케만드나요? -->
             <!-- 여기에 아이콘 넣으면 되나요? -->
 
-            <div class="slide-wrapper">
+            <div class="new-slide-wrapper">
                 <!-- 수정함이거 위에 스랄이드 랩퍼 -->
-                <ul class="slide-inner-container">
+
+                <!-- 밑에 이름들도 그리드처럼 통일 시켜도되는지??/**** -->
+                <ul class="new-slide-inner-container">
                     <li class="new-items1-pic">
                         <figure class="mom-pic1">
                             <img src="img/mother_nike1.jpg" alt="mom1">
@@ -291,33 +293,98 @@
         </div>
     </section>
 
-    <section class="best">
+    <section id="best">
         <!-- 여기 폰트 색 다르면 따로따로 입력해야 하는지?? -->
-        <h2 class="new-title">Best items</h2>
+        <h2 class="best-title">Best items</h2>
         <p>베스트 셀러에서 마음에 드는 나이키 아이템을 찾아보세요!</p>
 
+        <!-- 그리드 자리!!!!!복붙해오기!!*** -->
 
-        <div class="grid-best-container">
-    
-            <!-- div.item{$}*16 -->
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-            <div class="item">9</div>
-            <div class="item">10</div>
-            <div class="item">11</div>
-            <div class="item">12</div>
-            <div class="item">13</div>
-            <div class="item">14</div>
-            <div class="item">15</div>
-            <div class="item">16</div>
-        </div>
+
     </section>
+
+    <section id="event">
+        <h2 class="event-title">NIKE EVENT</h2>
+        <p>나이키에서 제공하는 다양한 이벤트를 확인해 보세요!</p>
+
+        <div class="new-slide-wrapper"></div>
+        
+
+
+            <ul class="event-slide-inner-container">
+                <li class="event1">
+                    <figure class="event1-pic">
+                        <img src="img/event1.jpg" alt="event1">
+                    </figure>
+                    
+                    <div class="new-text">
+                        <h3>2022 나이키 러너스 페스티벌</h3>
+                        <p>
+                            러닝을 즐기고 싶은 여러분을 위한 특별한 이벤트가 찾아옵니다.
+                            가볍고 재미잇게 즐길 수 있는 러닝 프로그램부처 스폐셜 런크루 세션, 뮤직 콘서트까지 다양하게 준비되는 나이키 
+                            러너스 페스티벌을 지금 확인해보세요.
+                        </p>
+                        <button class="new-more">자세히 보기</button>
+                        <!-- 밑에 a태그 확인받기!!1*** -->
+                        <a href="#" class="event-more">자세히 보기</a>
+                    </div>
+                </li>
+                <!-- 같은 h 태그에서 컬러만 다를때, h태그에 클래스 이름을 지정해줘야 하나요? vs css에서 부모 자식 자식 이렇게해서 그냥 스타일을 지정해주나요? -->
+                <!-- 자세히 보기 버튼태그보다 a태그가 나은지 물어보기!1**** -->
+                <li class="event1">
+                    <figure class="event1-pic">
+                        <img src="img/event1.jpg" alt="event1">
+                    </figure>
+                    
+                    <div class="new-text">
+                        <h3>2022 나이키 러너스 페스티벌</h3>
+                        <p>
+                            러닝을 즐기고 싶은 여러분을 위한 특별한 이벤트가 찾아옵니다.
+                            가볍고 재미잇게 즐길 수 있는 러닝 프로그램부처 스폐셜 런크루 세션, 뮤직 콘서트까지 다양하게 준비되는 나이키 
+                            러너스 페스티벌을 지금 확인해보세요.
+                        </p>
+                        <a href="#" class="event-more">자세히 보기</a>
+                    </div>
+                </li>
+
+                <li class="event1">
+                    <figure class="event1-pic">
+                        <img src="img/event1.jpg" alt="event1">
+                    </figure>
+                    
+                    <div class="new-text">
+                        <h3>2022 나이키 러너스 페스티벌</h3>
+                        <p>
+                            러닝을 즐기고 싶은 여러분을 위한 특별한 이벤트가 찾아옵니다.
+                            가볍고 재미잇게 즐길 수 있는 러닝 프로그램부처 스폐셜 런크루 세션, 뮤직 콘서트까지 다양하게 준비되는 나이키 
+                            러너스 페스티벌을 지금 확인해보세요.
+                        </p>
+                        <a href="#" class="event-more">자세히 보기</a>
+                    </div>
+                </li>
+
+                <li class="event1">
+                    <figure class="event1-pic">
+                        <img src="img/event1.jpg" alt="event1">
+                    </figure>
+                    
+                    <div class="new-text">
+                        <h3>2022 나이키 러너스 페스티벌</h3>
+                        <p>
+                            러닝을 즐기고 싶은 여러분을 위한 특별한 이벤트가 찾아옵니다.
+                            가볍고 재미잇게 즐길 수 있는 러닝 프로그램부처 스폐셜 런크루 세션, 뮤직 콘서트까지 다양하게 준비되는 나이키 
+                            러너스 페스티벌을 지금 확인해보세요.
+                        </p>
+                        <a href="#" class="event-more">자세히 보기</a>
+                    </div>
+                </li>
+
+            </ul>    
+        </div>
+
+    </section>
+
+
 
 
 </body>
