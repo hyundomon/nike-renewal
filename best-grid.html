@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+         ul{
+            list-style:none;
+        }
+        a {
+            text-decoration: none;
+        }
+    
+        .grid-best-container {
+            display: grid;
+            grid-template-columns: repeat(8, 304px);
+            grid-template-rows: 304px 304px;
+            gap: 24px 24px;
+
+            /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
+            grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
+
+        }
+    
+        .item {
+                border: 1px solid black;
+                background-color: gray;
+                position: relative;
+            }
+
+        .banner {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+    
+
+        .buy-button {
+            width: 96px;
+            height: 24px;
+            border-radius: 12px;
+            background-color: #ffffff70;
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            font-weight: 900;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            opacity: 0;
+            transition: 0.2s;
+        }
+
+        .blazer-pic {
+            transition: 0.2s;
+        }
+        .banner:hover ~ .best-pic {
+            filter: blur(4px);
+        }
+        .banner:hover ~ .buy-button {
+            opacity: 1;
+        }
+
+
+        /* 나중에 다른 이미지들도 구매하기 흐려주는거 일일이 넣어주기1!!! */
+    </style>
+</head>
+<body>
+
+    <section class="best">
+        <!-- 여기 폰트 색 다르면 따로따로 입력해야 하는지?? -->
+        <h2 class="new-title">Best items</h2>
+        <p>베스트 셀러에서 마음에 드는 나이키 아이템을 찾아보세요!</p>
+
+
+        <div class="grid-best-container">
+    
+            <!-- div.item{$}*16 -->
+            <div class="item">
+                <a href="#" class="banner"></a>
+                <figure class="best-pic">
+                    <img src="img/balzer_sneakers.jpg" alt="blazer-pic">
+                </figure>
+                <p class="buy-button">구매하기</p>
+            </div>
+ 
+            <div class="item">
+                <div class="best-text">
+                    <h4 class="best-items">나이키 브레이저 미드 '77</h4>
+                    <p>119,000원</p>
+                    <p>
+                        빈티지 농구 스타일.
+                        <br>신을수록 발에 편안하게 맞는 가족
+                        <br>갑피와 부드러운 스웨이드 엑센트로 고급
+                        <br>스러운 느낌을 선사하며 유행을 타지
+                        <br>않는.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="best-text">
+                    <h4 class="best-items">나이키 에어포스 1 '07'</h4>
+                    <p>128,000원</p>
+                    <p>
+                        전설적인 스타일의 재해석,
+                        <br>코트에서 누리는 편안함에 코트 밖에서
+                        <br>즐기는 멋까지 간직한 농구화.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#" class="banner"></a>
+                <figure class="best-pic">
+                    <img src="img/airmax_plus.jpg" alt="airmaxplus-pic">
+                </figure>
+                <p class="buy-button">구매하기</p>
+            </div>
+
+            <div class="item">
+                <div class="best-text">
+                    <h4 class="best-items">나이키 드라이 핏 레전드</h4>
+                    <p>128,000원</p>
+                    <p>
+                        전설적인 스타일의 재해석,
+                        <br>코트에서 누리는 편안함에 코트 밖에서
+                        <br>즐기는 멋까지 간직한 농구화.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+        </div>
+
+
+        
+<!-- 밑에꺼로 하는거 가능한지 확인하기 -->
+            <div class="item-blazer-pic">
+                <figure class="blazer-pic-background">블레이저이미지
+                    <img src="img/balzer_sneakers.jpg" alt="blazer-pic">
+                </figure>
+                <button>구매하기</button>
+                
+            </div>
+            <div class="item-airforce-white-text">
+                    <h4 class="best-items">나이키 에어포스 1 '07'</h4>
+                    <p>128,000원</p>
+                    <p>
+                        전설적인 스타일의 재해석,
+                        <br>코트에서 누리는 편안함에 코트 밖에서
+                        <br>즐기는 멋까지 간직한 농구화.
+                    </p>
+            </div>
+
+            <div class="item-airmaxplus-pic">3</div>
+            <div class="item-dryfit-text">4</div>
+            <div class="item-aiforce-black-pic">5</div>
+            <div class="item-solohoodie-text">6</div>
+            <div class="item-sprotsbra-pic">7</div>
+            <div class="item-acghoodie-text">8</div>
+            <div class="item-blazer-text">9</div>
+            <div class="item-airforce-white-pic">10</div>
+            <div class="item-airmaxplus-text">11</div>
+            <div class="item-dryfit-pic">12</div>
+            <div class="item-aiforce-black-text">13</div>
+            <div class="item-solohoodie-pic">14</div>
+            <div class="item-sprotsbra-text">15</div>
+            <div class="item-acghoodie-pic">16</div>
+
+            <!-- 여기까지 -->
+    </section>
+    
+</body>
+</html>
