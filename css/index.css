@@ -8,22 +8,22 @@
     --gray2: #e9e9e9;
     --gray3: #d9d9d9;
 }
-/* <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-</style>
-font-family: 'Noto Sans KR', sans-serif;
- */
 
- /* @import url(https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std);
- font-family: "Futura Std";
- Futura--Extra--Bold--Condensed
-  */
 
-  /* 
-  @import url(https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std);
-  font-family: "Futura Std";
-  Futura--Extra--Bold--Condensed--Oblique
-   */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std');
+@import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std');
+
+
+@font-face {
+    font-family: "Futura Std"; 
+    src: url("https://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot"); src: url("https://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff") format("woff"), url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.svg#Futura Std") format("svg"); 
+}
+@font-face {
+    font-family: "Futura Std Oblique"; 
+    src: url("https://db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot"); src: url("https://db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff") format("woff"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.svg#Futura Std") format("svg"); 
+}
+
 
 header .notice-container {
     background: #e9e9e9;
@@ -34,6 +34,8 @@ header .notice-container {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    /* 보더박스를 해야 테두리 안으로 패딩이 적용된다! */
 }
 
 header .notice-container figure {
@@ -47,3 +49,9 @@ header .notice-text {
     max-width: 100%;
     max-height: 100%;
 }
+
+header .notice-text span {
+    font-size: 16px;
+}
+
+
