@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol,ul {
+ol, ul {
 	list-style: none;
 }
 blockquote, q {
@@ -41,17 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img{
-    display: block;
-    width: 100%;
-    /* 왜? */
-}
 
-svg{
+a {
 	display: block;
-}
-
-a{
 	text-decoration: none;
-	/* display: block; */
+}
+img {
+	display: block;
+	width: 100%;
 }
