@@ -160,13 +160,6 @@ h1 {
 
 
 
-.snkrs-pic {
-    width: 389px;
-    height: 389px;
-}
-
-
-
 
 .wrap .button {
     position: relative;
@@ -219,4 +212,21 @@ h1 {
 
 .wrap input:checked ~ label .button .inside {
     left: 170px;
+}
+
+
+
+
+.snkrs-pic {
+    width: 389px;
+    height: 389px;
+}
+
+.snkrs-title {
+    font-family: "Futura Std";
+    font-size: 40px;
+}
+
+.red{
+    color: var(--main-red);
 }
