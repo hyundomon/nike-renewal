@@ -12,10 +12,21 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std');
+/* @import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std'); */
 /* @import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std');  */
 
-@font-face {font-family: "Futura Std Ex";
+
+@font-face {
+    font-family: "Futura Std"; 
+    src: url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot"); 
+    src: url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.svg#Futura Std") format("svg"); 
+}
+@font-face {
+    font-family: "Futura Std Ex";
     src: url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot");  
     src: url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot?#iefix") format("embedded-opentype"), 
     url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff2") format("woff2"), 
@@ -150,7 +161,6 @@ a {
     justify-content: center;
     align-items: center;
     height: 830px;
-    margin-bottom: 213px;
 }
 
 h1 {
@@ -165,14 +175,13 @@ h1 {
     font-size: 20px;
 }
 
-
 .sr-only {
     display: none;
 }
 
 .slide-button-wrap .button {
     position: relative;
-    width: 353px;
+    width: 350px;
     height: 50px;
     border-radius: 34px;
     background-color: var(--gray3);
