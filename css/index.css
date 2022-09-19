@@ -80,7 +80,6 @@ a {
 .notice-text {
     display: flex;
     align-items: center;
-    display: flex;
     text-decoration: noun;
 }
 
@@ -144,6 +143,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 830px;
+    margin-bottom: 213px;
 }
 
 h1 {
@@ -171,7 +171,10 @@ h1 {
     cursor: pointer;
     padding: 0px 32px 0px 32px;
     box-sizing: border-box;
+    margin-top: 123px;
+    margin: 0 auto;
 }
+
 
 .wrap .button p {
     line-height: 50px;
@@ -225,8 +228,53 @@ h1 {
 .snkrs-title {
     font-family: "Futura Std";
     font-size: 40px;
+    box-sizing: border-box;
+    padding-top: 29px;
 }
 
 .red{
     color: var(--main-red);
+}
+
+.snkrs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1215px;
+    height: 537px;
+    gap: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 30px; 
+    margin-bottom: 336px
+}
+
+.name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+.color {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.price {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 4px;
+}
+
+.more {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
 }
