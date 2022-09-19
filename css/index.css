@@ -13,12 +13,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std');
-@import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std'); 
+/* @import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std');  */
 
+@font-face {font-family: "Futura Std Ex";
+    src: url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot");  
+    src: url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot?#iefix") format("embedded-opentype"), 
+    url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff2") format("woff2"), 
+    url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.ttf") format("truetype"), 
+    url("http://db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.svg#Futura Std") format("svg"); 
+}
 
 /* @font-face {
-    font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) 
+    font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;  
         format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) 
         format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
 }
@@ -134,7 +141,7 @@ a {
 }
 
 .intro-box {
-    background-image: url(../img/nike_intro_img.jpg);
+    background-image: url(/img/nike_intro_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -159,9 +166,11 @@ h1 {
 }
 
 
+.sr-only {
+    display: none;
+}
 
-
-.wrap .button {
+.slide-button-wrap .button {
     position: relative;
     width: 353px;
     height: 50px;
@@ -173,27 +182,30 @@ h1 {
     box-sizing: border-box;
     margin-top: 123px;
     margin: 0 auto;
+    z-index: -2;
 }
 
 
-.wrap .button p {
+.slide-button-wrap .button p {
     line-height: 50px;
     color: var(--main-black);
-    opacity: 0;
     transition: all 0.2s;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
+    padding-left: 15px;
 
     /* font-family: 'NotoSansKR-Regular'
     폰트 이거 물어봐보기!!! */
 }
 
-.wrap .button .inside {
+.slide-button-wrap .button .inside {
     position: absolute;
     top: 50%;
+    left: 1px;
     width: 183px;
     height: 46px;
     border: 1px solid var(--main-black);
@@ -203,22 +215,20 @@ h1 {
     transform: translateY(-50%);
     transition: all 0.2s;
     justify-content: space-between;
+    z-index: -1;
 }
 
-.wrap input:checked ~ label .button {
-    background-color: var(--white);
+.slide-button-wrap input:checked ~ label .button {
+    background-color: var(--gray3);
 }
 
-.wrap input:checked ~ label .button p {
+.slide-button-wrap input:checked ~ label .button p {
     opacity: 1;
 }
 
-.wrap input:checked ~ label .button .inside {
+.slide-button-wrap input:checked ~ label .button .inside {
     left: 170px;
 }
-
-
-
 
 .snkrs-pic {
     width: 389px;
@@ -230,6 +240,7 @@ h1 {
     font-size: 40px;
     box-sizing: border-box;
     padding-top: 29px;
+    margin-left: 354px;
 }
 
 .red{
@@ -240,13 +251,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1215px;
+    width: 1216px;
     height: 537px;
     gap: 30px;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 30px; 
-    margin-bottom: 336px
+    margin: 30px 352px 336px 352px;
 }
 
 .name {
@@ -262,7 +272,9 @@ h1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
     text-align: center;
+    padding-top: 5px;
 }
+/* padding top 5 넣어줌 피그마에선 아직 안줌!!!1*** */
 
 .price {
     font-family: 'Noto Sans KR', sans-serif;
@@ -277,4 +289,62 @@ h1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 25px;
     font-weight: 700;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.more .black {
+    margin-right: 8px;
+}
+
+.paper-background-pic {
+    background-image: url(/img/white-paper-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    font-family:  "Futura Std";
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 750;
+}
+
+h2 .orange {
+    font-family:  "Futura Std";
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 750;
+    color: var(--main-orange);
+}
+
+/* 폰트 extra bold는 없는가요? */
+
+.new-items-pic {
+    width: 390px;
+    height: 410px;
+}
+
+.new-items1-pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.snkrs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1215px;
+    height: 537px;
+    gap: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 30px 352px 336px 352px;
 }
