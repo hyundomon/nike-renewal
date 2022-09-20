@@ -174,8 +174,10 @@ h1 {
 }
 
 #snkrs {
+    padding-top: 150px;
     padding-bottom: 150px;
     background-color: pink;
+    min-width: 1216px;
 }
 /* 배경색 지우고 토글에 패딩탑 주기!! */
 
@@ -197,7 +199,6 @@ h1 {
     margin: 0 auto;
     z-index: -2;
 }
-
 
 .slide-button-wrap .button p {
     line-height: 50px;
@@ -242,7 +243,10 @@ h1 {
 .slide-button-wrap input:checked ~ label .button .inside {
     left: 170px;
 }
-
+.snkrs-whole-container {
+    width: 1216px;
+    margin: auto;
+}
 .snkrs-pic {
     width: 389px;
     height: 389px;
@@ -253,14 +257,20 @@ h1 {
     font-size: 40px;
     box-sizing: border-box;
     padding-top: 30px;
-    padding-left: 354px;
     padding-bottom: 30px;
+    display: flex;
 }
 
 .red{
     color: var(--main-red);
 }
 
+.snkrs-whole-wrapper {
+    position: relative;
+    height: 510px;
+    width: 1216px;
+    
+}
 .snkrs-incoming-wrapper, .snkrs-upcoming-wrapper {
     display: flex;
     align-items: center;
@@ -271,6 +281,11 @@ h1 {
     text-align: center;
     box-sizing: border-box;
     margin: 0 auto;
+    position: absolute;
+    /* transition: 1s;
+    opacity: 0; 
+    오퍼시티를 체크박스에 따라서 넣야줘야한다!! */
+    
 }
 
 .name {
@@ -304,6 +319,11 @@ h1 {
     font-weight: 700;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: -230px;
+    transform: translateY(-50%);
 }
 
 .more .black {
@@ -339,12 +359,15 @@ h2 .orange {
 }
 
 .new-items-pic-wrapper {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     width: 1216px;
-    height: 554px;
+    height: 700px;
+}
+
+.item-pic-container {
+    display: flex;
 }
 
 h3 {

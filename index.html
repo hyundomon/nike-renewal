@@ -102,7 +102,8 @@
         </div>
     
     <!-- 밑에 제목은 h2인데 크기가 다른거는 클래스 붙여줌 -->
-        <h2 class="snkrs-title">Lastest in <span class="red">SNKRS</span></h2>
+        <div class="snkrs-whole-container">
+            <h2 class="snkrs-title">Lastest in <span class="red">SNKRS</span></h2>
             <div class="snkrs-whole-wrapper">
                 <ul class="snkrs-incoming-wrapper">
                     <li class="incoming-snkrs1">
@@ -137,8 +138,7 @@
                             <p class="price">179,000원</p>
                         </a>
                     </li>
-                </ul>
-                
+                </ul>            
                 <ul class="snkrs-upcoming-wrapper">
                     <li class="upcoming-snkrs4">
                         <a href="#">
@@ -174,14 +174,14 @@
                     </li>
                 </ul> 
             </div>
-
-            <div class="more">
-                <a href="#">
-                    <p>
-                    <span class="black">More</span><span class="red">SNKRS</span>
-                    </p>
-                </a>
-            </div>      
+        </div>         
+        <div class="more">
+            <a href="#">
+                <p>
+                <span class="black">More</span><span class="red">SNKRS</span>
+                </p>
+            </a>
+        </div> 
     </section>
 
     <section id="new">
@@ -201,15 +201,17 @@
                 <!-- 밑에 이름들도 그리드처럼 통일 시켜도되는지??/**** -->
                 <ul class="new-slide-inner-container">
                     <li class="new-items-pic-wrapper">
-                        <figure class="new-items-pic">
-                            <img src="img/mother_nike1.jpg" alt="mom1">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/mother_nike2.jpg" alt="mom2">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/mother_nike3.jpg" alt="mom3">
-                        </figure>
+                        <div class="item-pic-container">
+                            <figure class="new-items-pic">
+                                <img src="img/mother_nike1.jpg" alt="mom1">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/mother_nike2.jpg" alt="mom2">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/mother_nike3.jpg" alt="mom3">
+                            </figure>
+                        </div>
                         
                         <div class="new-text">
                             <h3><span class="pink">엄마를 위한 나이키</span></h3>
@@ -221,15 +223,17 @@
                     <!-- 이 뒤쪽으로 다음 슬라이드 li태그 이용해서 추가 -->
                     
                     <li class="new-items-pic-wrapper">
-                        <figure class="new-items-pic">
-                            <img src="img/school1.jpg" alt="school1"> 
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/school2.jpg" alt="school2">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/school3.jpg" alt="school">
-                        </figure>
+                        <div class="item-pic-container">
+                            <figure class="new-items-pic">
+                                <img src="img/school1.jpg" alt="school1"> 
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/school2.jpg" alt="school2">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/school3.jpg" alt="school">
+                            </figure>
+                        </div>
                         
                         <div class="new-text">
                             <h3><span class="orange">나이키와 함께하는 새학기 새출발</span></h3>
@@ -239,15 +243,17 @@
                     </li>
 
                     <li class="new-items-pic-wrapper">
-                        <figure class="new-items-pic">
-                            <img src="img/adventure1.jpg" alt="acg1">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/adventure2.jpg" alt="acg2">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/adventure3.jpg" alt="acg3">
-                        </figure>
+                        <div class="item-pic-container">
+                            <figure class="new-items-pic">
+                                <img src="img/adventure1.jpg" alt="acg1">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/adventure2.jpg" alt="acg2">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/adventure3.jpg" alt="acg3">
+                            </figure>
+                        </div>
                         
                         <div class="new-text">
                             <h3><span class="green">나이키와 함께하는 모험</span></h3>
@@ -257,15 +263,17 @@
                     </li>
 
                     <li class="new-items-pic-wrapper">
-                        <figure class="new-items-pic">
-                            <img src="img/fly_knit1.jpg" alt="fly-knit1">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/fly_knit2.jpg" alt="fly-knit2">
-                        </figure>
-                        <figure class="new-items-pic">
-                            <img src="img/fly_knit3.jpg" alt="fly-knit3">
-                        </figure>
+                        <div class="item-pic-container">
+                            <figure class="new-items-pic">
+                                <img src="img/fly_knit1.jpg" alt="fly-knit1">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/fly_knit2.jpg" alt="fly-knit2">
+                            </figure>
+                            <figure class="new-items-pic">
+                                <img src="img/fly_knit3.jpg" alt="fly-knit3">
+                            </figure>
+                        </div>
                         
                         <div class="new-text">
                             <h3><span class="gray">플라이니트 10주년 에디션</span></h3>
