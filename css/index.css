@@ -321,9 +321,10 @@ h1 {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 50%;
+    position: absolute;
+    /* top: 50%;
     right: -230px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .more .black {
@@ -350,12 +351,20 @@ h2 .orange {
 
 /* 폰트 extra bold는 없는가요? */
 
+#new {
+    background-image: url(/img/white-paper-texture.jpg);
+    height: 850px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .new-items-pic {
     width: 390px;
     height: 410px;
     margin: 0 auto;
-    
 }
 
 .new-items-pic-wrapper {
@@ -369,32 +378,51 @@ h2 .orange {
 .item-pic-container {
     display: flex;
 }
+.new-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
 
 h3 {
     font-size: 45px;
 }
 
-.new-text p{
+.new-text p {
     font-size: 30px;
+    padding-top: 10px;
 }
 
 .pink {
     color: #E4A5A5;
+    font-weight: 700;
 }
 
-
-.new-text {
-    margin-top: 50px;
+.new-text .orange {
+    color: var(--main-orange);
+    font-weight: 700;
 }
 
-#new a {
+.green {
+    color: #277B2F;
+    font-weight: 700;
+}
+
+.gray {
+    color: #444444;
+    font-weight: 700;
+}
+
+.new-slide-inner-container a {
     width: 184px;
     height: 54px;
     border-radius: 30px;
-    background-color: pink;
+    background-color: var(--main-white);
     font-size: 26px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
