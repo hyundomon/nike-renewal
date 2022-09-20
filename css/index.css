@@ -10,10 +10,11 @@
 }
 
 
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-/* @import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std'); */
-/* @import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std');  */
+@import url('https://db.onlinewebfonts.com/c/53787f28b31ce517ee2495c631e52617?family=Futura+Std'); 
+@import url('https://db.onlinewebfonts.com/c/e54f366d5c05660f8ec30da77797eccb?family=Futura+Std'); 
+*/
 
 
 @font-face {
@@ -24,7 +25,9 @@
     url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.woff") format("woff"), 
     url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.svg#Futura Std") format("svg"); 
+    unicode-range: U+004-005f, U+0061-007A;
 }
+
 @font-face {
     font-family: "Futura Std Ex";
     src: url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot"); 
@@ -35,11 +38,13 @@
         url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.svg#Futura Std") format("svg");  
 }
 
-/* @font-face {
-    font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;  
-        format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) 
-        format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+@font-face {
+    font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) 
+    format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) 
+    format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
 }
+
 
 @font-face {
     font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;
@@ -48,7 +53,7 @@
     format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
 }
 
-@font-face {
+/* @font-face {
     font-family: "Futura Std"; 
     src: url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot"); 
     src: url("//db.onlinewebfonts.com/t/e54f366d5c05660f8ec30da77797eccb.eot?#iefix") 
@@ -65,8 +70,9 @@
         format("woff2"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff") 
         format("woff"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.ttf") 
         format("truetype"), url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.svg#Futura Std") format("svg"); 
-    }
-    */
+    } */
+
+
 
 body {
     font-family: "Futura Std", "Futura Std Ex", 'Noto Sans KR', sans-serif;
@@ -385,7 +391,7 @@ h2 .orange {
     margin-top: 50px;
 }
 
-h3 {
+#new h3 {
     font-size: 45px;
 }
 
@@ -426,3 +432,164 @@ h3 {
     align-items: center;
     /* border: 1px solid black; */
 }
+
+.best-title p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.best-title {
+    margin-bottom: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+/* 위에꺼 꼭 넣넣어어야 하는지 */
+
+ ul{
+    list-style:none;
+}
+a {
+    text-decoration: none;
+}
+
+.grid-best-container {
+    display: grid;
+    grid-template-columns: repeat(8, 304px);
+    grid-template-rows: 304px 304px;
+    gap: 24px 24px;
+    position: relative;
+
+    /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
+    grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
+
+}
+
+.item {
+        background-color: var(--gray2);
+        position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.buy-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #ffffff70;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.best-pic {
+    transition: 0.2s;
+}
+.banner:hover ~ .best-pic {
+    filter: blur(3px);
+}
+.banner:hover ~ .buy-button {
+    opacity: 1;
+}
+
+h4 {
+    font-size: 22px;
+    padding: 8px 4px;
+}
+
+.best-price {
+    font-size: 18px;
+    padding: 8px 4px;
+}
+
+.info {
+    font-size: 16px;
+    padding: 16px 4px;
+    line-height: 18px;
+}
+
+.best-text {
+    margin: auto;
+    width: 260px;
+    height: 160px;
+    position: absolute;
+    transform: translate(10%, 50%);
+}
+
+#event {
+    margin: 0 auto;
+}
+
+.event-text {
+    width: 1216px;
+}
+
+.event-title {
+    margin-bottom: 30px;
+}
+
+.event-title p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.event-pic, .event-video>video {
+    width: 1216px;
+    height: 506px;
+}
+
+.event-title-more {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+}
+
+.event-text h3 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.event-more {
+    font-size: 18px;
+    /* 폰트 크이 20인데 더 나은거로 정해서 피그마까지 수정하기!! */
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-text p {
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: ;
+    line-height: 40px;
+
+}
+
+.event-slide .snkrs-whole-wrapper
