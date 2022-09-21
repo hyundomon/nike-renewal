@@ -346,7 +346,7 @@ h2 {
     font-size: 60px;
     font-weight: 750;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 h2 .orange {
@@ -360,11 +360,23 @@ h2 .orange {
 #new {
     background-image: url(/img/white-paper-texture.jpg);
     height: 850px;
+    position: relative;
+}
+
+.new-slide-inner-container {
+    display: flex;
+    transition: 1s;
+    transform: translateX(-00vw);
+    /* 나중에 -100 -200 -300 으로 자바에서 넣어줄것임!! */
 }
 
 .button-container {
     display: flex;
+    width: 100%;
+    position: absolute;
     justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .new-items-pic {
@@ -376,18 +388,24 @@ h2 .orange {
 .new-items-pic-wrapper {
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 1216px;
+    width: 100vw;
     height: 700px;
+    margin-top: 50px;
+    flex-shrink: 0;
 }
 
 .item-pic-container {
     display: flex;
+    width: 1216px;
+    margin: 0 auto;
 }
 .new-text-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    width: 1216px;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
@@ -430,7 +448,10 @@ h2 .orange {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
+}
+
+#best {
+    padding-bottom: 50px;
 }
 
 .best-title p {
@@ -443,13 +464,7 @@ h2 .orange {
     margin-bottom: 30px;
 }
 
-* {
-    margin: 0;
-    padding: 0%;
-}
-/* 위에꺼 꼭 넣넣어어야 하는지 */
-
- ul{
+ul{
     list-style:none;
 }
 a {
@@ -587,9 +602,71 @@ h4 {
 .event-text p {
     font-size: 26px;
     padding-top: 10px;
-    padding-bottom: ;
     line-height: 40px;
 
 }
 
-.event-slide .snkrs-whole-wrapper
+.event-slide-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+#membership h2 {
+    font-family: "Futura Std";
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+#membership .title {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#membership .recommend {
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.join-member {
+    font-size: 22px;
+    /* 폰트 크이 20인데 더 나은거로 정해서 피그마까지 수정하기!! */
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.membership1-whole-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership1 img {
+    align-items: right;
+    width: 1155px;
+    height: 720px;
+}
+
+.membership2-whole-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership2 video {
+    width: 1155px;
+    height: 478px;
+}
+
+.membership1-text-wrapper, .membership2-text-wrapper{
+    width: 630px;
+    height: 450px;
+}
