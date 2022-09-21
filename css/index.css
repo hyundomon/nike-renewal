@@ -687,18 +687,18 @@ h4 {
     height: 980px;
 }
 
-.background1 {
+.background {
     width: 270px;
     height: 580px;
-    position: absolute;
-    z-index: 1
+    /* position: absolute; */
+    /* z-index: 1 */
 }
 
-.qr-code1 {
+.qr-code {
     width: 130px;
     height: 130px;
-    position: absolute;
-    z-index: 2;
+    /* position: absolute; */
+    /* z-index: 2; */
 }
 
 .app-info-container {
@@ -708,9 +708,6 @@ h4 {
     height: 270px;
 }
 
-.app-info-container .app-name {
-
-}
 
 .app-icon img {
     width: 58px;
