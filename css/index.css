@@ -648,6 +648,8 @@ h4 {
 .membership1-whole-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
 }
 
 .membership1 img {
@@ -659,6 +661,9 @@ h4 {
 .membership2-whole-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 150px 0;
+
 }
 
 .membership2 video {
@@ -667,6 +672,97 @@ h4 {
 }
 
 .membership1-text-wrapper, .membership2-text-wrapper{
-    width: 630px;
+    width: 580px;
     height: 450px;
+    line-height: 30px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.membership1-text-wrapper {
+    order: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--gray3);
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+
+.sns-icons {
+    display: flex;
+    width: 200px;   
+    justify-content: space-between;
+}
+
+.sns-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-left-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.footer-left-nav li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.nav1 .about-nike {
+    font-family: "Futura Std";
+}
+
+.nav2 {
+    font-weight: 700;
+}
+
+
+.footer-right {
+    width: 530px;
+    height: 220px;
+    font-size: 14px;
+}
+
+.right-info1 p, address, span, a{
+    padding: 4px 0;
+}
+
+.right-info2 {
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
