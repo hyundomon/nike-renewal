@@ -632,7 +632,6 @@ h4 {
 
 .join-member {
     font-size: 22px;
-    /* 폰트 크이 20인데 더 나은거로 정해서 피그마까지 수정하기!! */
     width: 170px;
     height: 50px;
     border-radius: 30px;
@@ -683,7 +682,75 @@ h4 {
     order: -1;
 }
 
+.iphone-frame img {
+    width: 660px;
+    height: 980px;
+}
 
+.background1 {
+    width: 270px;
+    height: 580px;
+    position: absolute;
+    z-index: 1
+}
+
+.qr-code1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    z-index: 2;
+}
+
+.app-info-container {
+    background-color: rgba(42, 42, 42, 0.6);
+    font-family: 'Noto Sans KR';
+    width: 225px;
+    height: 270px;
+}
+
+.app-info-container .app-name {
+
+}
+
+.app-icon img {
+    width: 58px;
+    height: 58px;
+}
+
+.nike-apps-text {
+    width: 750px;
+    height: 520px;
+}
+
+.nike-apps-text h2 {
+    font-family: "Futura Std";
+    text-align: left;
+}
+
+.nike-apps-text .title {
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.nike-apps-text .recommend {
+    font-size: 24px;
+    padding-bottom: 45px;
+    line-height: 40px;
+}
+
+.nike-apps-text a {
+    font-size: 22px;
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
