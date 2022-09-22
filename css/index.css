@@ -930,3 +930,7 @@ footer {
     margin-bottom: 20px;
 }
 
+.right-info2 a {
+    display: inline;
+}
+/* 이거 왜 안먹히는 지물어보기 */
