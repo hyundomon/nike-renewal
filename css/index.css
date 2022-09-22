@@ -200,8 +200,9 @@ h1 {
 #snkrs {
     padding-top: 150px;
     padding-bottom: 150px;
-    background-color: pink;
     min-width: 1216px;
+    position: relative;
+
 }
 /* 배경색 지우고 토글에 패딩탑 주기!! */
 
@@ -232,7 +233,7 @@ h1 {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     z-index: 5;
     padding-left: 15px;
 
@@ -284,6 +285,10 @@ h1 {
     padding-bottom: 30px;
     display: flex;
     /* margin-right: 8px;    이거 왜 안먹히는지!!?물어보기 */
+}
+
+.snkrs-title > span {
+    margin-left: 14px;
 }
 
 .red{
@@ -346,10 +351,12 @@ h1 {
     display: flex;
     align-items: center;
     position: absolute;
-    position: absolute;
-    /* top: 50%;
-    right: -230px;
-    transform: translateY(-50%); */
+    top: 50%;
+    right: 140px;
+    /* transform: translateY(-50px); ㅇㅣ거 굳이 안줘도되는지 물어보기 */
+}
+#snkrs .more a {
+    padding: 10px;
 }
 
 .more .black {
@@ -845,8 +852,6 @@ footer {
 .footer-container {
     width: 1400px;
     margin: 0 auto;
-    padding: 20px 0;
-
 }
 
 .sns-icons {
@@ -866,7 +871,7 @@ footer {
     width: 1400px;
     height: 250px;
     margin: 0 auto;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .footer-left-nav {
@@ -899,11 +904,29 @@ footer {
     /* 한글이랑 영어 모두다 Nnotosans로 해주는법!! */
 }
 
-.right-info1 p, address, span, a{
+/* .right-info1> p, .right-info1>address, .right-info1>span, .right-info1>a {
+    margin-bottom: 10px;
+} */
+
+.right-info1>p,address,span,a {
     margin-bottom: 10px;
 }
 
-.right-info2 {
-    padding-top: 30px;
-    padding-bottom: 16px;
+.right-info1 p {
+    display: flex;
 }
+
+.right-info1 span::before {
+    content: "|";
+    margin: 5px;
+}
+
+.right-info2 {
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.right-info2 p{
+    margin-bottom: 20px;
+}
+
