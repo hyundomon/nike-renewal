@@ -706,7 +706,6 @@ h4 {
     width: 580px;
     height: 450px;
     line-height: 30px;
-    align-items: center;
     margin: 0 auto;
 }
 
@@ -717,6 +716,9 @@ h4 {
 #nike-app {  
     padding-top: 150px;
 }
+.iphone-and-screen {
+    position: relative;
+}
 
 .iphone-whole-wrapper {
     padding-bottom: 250px;
@@ -724,8 +726,25 @@ h4 {
     justify-content: center;
 }
 
+.screen-frame {
+    display: flex;
+    width: 274px;
+    height: 590px;
+    overflow: hidden;
+    position: absolute;
+    top: 121px;
+    left: 281px;
+    transform: translateX(-274px);
+    transition: 1s;
+}
+
+.iphone-screen-whole-wrapper {
+    display: flex;
+}
+
 .iphone-frame {
     z-index: 2;
+    position: relative;
 }
 
 .iphone-frame img {
@@ -749,10 +768,6 @@ h4 {
     align-items: center;
     width: fit-content;
     position: relative;
-}
-
-.phone-wrapper1 {
-    float: left;
 }
 
 .app-info-background-container {
