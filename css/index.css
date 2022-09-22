@@ -43,6 +43,7 @@
     src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) 
     format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) 
     format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
 
@@ -51,6 +52,7 @@
     src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) 
     format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) 
     format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+    unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
 /* @font-face {
@@ -75,7 +77,7 @@
 
 
 body {
-    font-family: "Futura Std", "Futura Std Ex", 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif, "Futura Std", "Futura Std Ex";
 }
 
 a {
@@ -265,6 +267,7 @@ h1 {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
+    /* margin-right: 8px;    이거 왜 안먹히는지!!?물어보기 */
 }
 
 .red{
@@ -528,11 +531,13 @@ a {
 h4 {
     font-size: 22px;
     padding: 8px 4px;
+    font-weight: 700;
 }
 
 .best-price {
     font-size: 18px;
     padding: 8px 4px;
+    font-weight: 700;
 }
 
 .info {
