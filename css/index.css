@@ -705,7 +705,7 @@ h4 {
     height: 130px;
 }
 
-.phone-wrapper1 {
+.phone-wrapper1, .phone-wrapper2 {
     display: flex;
     align-items: center;
 }
