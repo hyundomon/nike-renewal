@@ -31,11 +31,12 @@
 @font-face {
     font-family: "Futura Std Ex";
     src: url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot"); 
-        src: url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot?#iefix") format("embedded-opentype"), 
-        url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff2") format("woff2"), 
-        url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff") format("woff"), 
-        url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.ttf") format("truetype"), 
-        url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.svg#Futura Std") format("svg");  
+    src: url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/53787f28b31ce517ee2495c631e52617.svg#Futura Std") format("svg");  
+    unicode-range: U+004-005f, U+0061-007A;
 }
 
 @font-face {
@@ -46,6 +47,13 @@
     unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
+@font-face {
+    font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) 
+    format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) 
+    format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+    unicode-range:  U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
 
 @font-face {
     font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;
@@ -53,6 +61,14 @@
     format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) 
     format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
     unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) 
+    format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) 
+    format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+    unicode-range:  U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 
 /* @font-face {
@@ -616,6 +632,10 @@ h4 {
     justify-content: center;
 }
 
+#membership {
+    padding-top: 350px;
+    /* 나중에 위에 이벤트 섹션 패딩바텀 주고 준만큼 줄여주기!!! */
+}
 
 #membership h2 {
     font-family: "Futura Std";
@@ -687,17 +707,29 @@ h4 {
     order: -1;
 }
 
+#nike-app {  
+    padding-top: 150px;
+}
+
+.iphone-whole-wrapper {
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.iphone-frame {
+    z-index: 2;
+}
+
 .iphone-frame img {
     width: 660px;
     height: 980px;
 }
 
 .background {
-    width: 270px;
-    height: 580px;
+    width: 274px;
+    height: 590px;
     z-index: 1;
-    /* position: absolute; */
-    /* z-index: 1 */
 }
 
 .qr-code {
@@ -708,6 +740,12 @@ h4 {
 .phone-wrapper1, .phone-wrapper2 {
     display: flex;
     align-items: center;
+    width: fit-content;
+    position: relative;
+}
+
+.phone-wrapper1 {
+    float: left;
 }
 
 .app-info-background-container {
@@ -728,8 +766,9 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .app-name {
@@ -837,26 +876,31 @@ footer {
 }
 
 .footer-left-nav li {
-    padding: 5px 0;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
+.nav1 li, .nav3 li {
+    font-weight: 700;
+}
 .nav1 .about-nike {
     font-family: "Futura Std";
 }
 
-.nav2, .customer {
-    font-weight: 700;
+.nav2, .nav3>.customer {
+    font-weight: 900;
 }
 
 .footer-right {
     width: 530px;
     height: 220px;
     font-size: 14px;
+    font-weight: 500;
+    /* 한글이랑 영어 모두다 Nnotosans로 해주는법!! */
 }
 
 .right-info1 p, address, span, a{
-    padding: 4px 0;
+    margin-bottom: 10px;
 }
 
 .right-info2 {
