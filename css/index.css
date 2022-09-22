@@ -810,7 +810,6 @@ footer {
 
 }
 
-
 .sns-icons {
     display: flex;
     width: 200px;   
@@ -846,10 +845,9 @@ footer {
     font-family: "Futura Std";
 }
 
-.nav2 {
+.nav2, .customer {
     font-weight: 700;
 }
-
 
 .footer-right {
     width: 530px;
