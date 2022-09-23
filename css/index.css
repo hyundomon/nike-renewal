@@ -923,7 +923,7 @@ footer {
     margin-bottom: 10px;
 } */
 
-.right-info1>p,address,span,a {
+.right-info1>p, .right-info1>address, .right-info1>span, .right-info1>a {
     margin-bottom: 10px;
 }
 
