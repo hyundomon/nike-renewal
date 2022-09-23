@@ -824,12 +824,14 @@ h4 {
 
 .nike-apps-text {
     width: 750px;
-    height: 520px;
+    height: 550px;
+    margin: auto 0;
 }
 
 .nike-apps-text h2 {
     font-family: "Futura Std";
     text-align: left;
+    padding-top: 0px;
 }
 
 .nike-apps-text .title {
