@@ -581,6 +581,24 @@ h4 {
     margin: 0 auto;
 }
 
+.event-slide-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    overflow: hidden;
+}
+
+.event-slide-inner-container {
+    transform: translateY(-00px);
+    transition: 0.5s;
+    /* **** 슬라이드 0,-800px, -1600px로 넣어주기!!! */
+}
+
+
+.event-slide-inner-container>li {
+    height: 800px;
+}
+
 .event-text {
     width: 1216px;
 }
@@ -631,16 +649,11 @@ h4 {
     font-size: 26px;
     padding-top: 10px;
     line-height: 40px;
-
 }
 
-.event-slide-wrapper {
-    display: flex;
-    justify-content: center;
-}
 
 #membership {
-    padding-top: 350px;
+    padding-top: 200px;
     /* 나중에 위에 이벤트 섹션 패딩바텀 주고 준만큼 줄여주기!!! */
 }
 
@@ -694,7 +707,6 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 150px 0;
-
 }
 
 .membership2 video {
@@ -721,9 +733,9 @@ h4 {
 }
 
 .iphone-whole-wrapper {
-    padding-bottom: 250px;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .screen-frame {
