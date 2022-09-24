@@ -280,7 +280,7 @@ h1 {
 .snkrs-title {
     font-family: "Futura Std";
     font-size: 40px;
-    margin-top 30px;
+    margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     /* margin-right: 8px;    이거 왜 안먹히는지!!?물어보기 */
