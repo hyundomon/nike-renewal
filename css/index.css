@@ -499,6 +499,62 @@ a {
     /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
     grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
 
+    animation-name: best-ani;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out; 
+}
+
+.item-pic:nth-child(1) {
+    order: 1;
+}
+.item-pic:nth-child(3) {
+    order: 10;
+}
+.item-pic:nth-child(5) {
+    order: 3;
+}
+.item-pic:nth-child(7) {
+    order: 12;
+}
+.item-pic:nth-child(9) {
+    order: 5;
+}
+.item-pic:nth-child(11) {
+    order: 14;
+}
+.item-pic:nth-child(13) {
+    order: 7;
+}
+.item-pic:nth-child(15) {
+    order: 16;
+}
+
+.item-text:nth-child(2) {
+    order: 9;
+}
+.item-text:nth-child(4) {
+    order: 2;
+}
+.item-text:nth-child(6) {
+    order: 11;
+}
+.item-text:nth-child(8) {
+    order: 4;
+}
+.item-text:nth-child(10) {
+    order: 13;
+}
+.item-text:nth-child(12) {
+    order: 6;
+}
+.item-text:nth-child(14) {
+    order: 15;
+}
+.item-text:nth-child(16) {
+    order: 8;
 }
 
 .item-pic, .item-text {
@@ -733,7 +789,7 @@ h4 {
     left: 281px;
     transition: 1s;
 
-    animation-name: apps-ani;
+    animation-name: best-ani;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -747,7 +803,7 @@ h4 {
     /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
 }
 
-@keyframes apps-ani {
+@keyframes best-ani {
     from{
         margin-left: 0;
 
