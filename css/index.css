@@ -507,10 +507,16 @@ a {
     animation-timing-function: ease-in-out; 
 }
 
-.screen-frame :hover {
+.best-frame :hover {
     animation-play-state: paused; 
-    /* 호버시 마우스 올리면 멈추는거 어케하는지 ㅁ루어보기!! */
-    /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
+    width: 304px;
+    height: 632px;
+    transition: 0.2s;
+    border: 3px solid gray;
+}
+
+.banner:hover ~ .grid-best-container {
+    filter: blur(3px);
 }
 
 @keyframes best-ani {
