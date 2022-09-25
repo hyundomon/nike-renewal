@@ -717,6 +717,75 @@
         </div>
     </footer>
 
+    <script>
+        const newSlideInnerContainer = document.querySelector(`.new-slide-inner-container`);
+
+        const cloneFirst = newSlideInnerContainer.firstElementChild.cloneNode(true);
+        const cloneLast = newSlideInnerContainer.lastElementChild.cloneNode(true);
+        const 슬라이드너비 = document.querySelector(`.new-slide-wrapper`).clientWidth;
+
+        newSlideInnerContainer.insertBefore(
+            cloneLast,
+            newSlideInnerContainer.firstChild
+        );
+        newSlideInnerContainer.appendChild(cloneFirst);
+
+        const buttons = document.querySelector(`.prev`);
+        const prevButton  = buttons[0];
+        const nextButton  = buttons[1];
+
+        let moveChecker = true;
+
+        let index = 1;
+        moveSlide(false);
+
+        nextButton.addEventListener("click", () => {
+        //childElmentCount 프로퍼티에는 자식요소의 갯수 값이 들어있다
+        if (moveChecker) {
+          moveChecker = false;
+          index++;
+          moveSlide(true);
+
+          setTimeout(() => {
+            moveChecker = true;
+            if (index === newSlideInnerContainer.childElementCount - 1) {
+              index = 1;
+              moveSlide(false);
+            }
+          }, 100);
+        }
+      });
+
+      prevButton.addEventListener(`click`, () => {
+        if (moveChecker) {
+          moveChecker = false;
+          index--;
+          moveSlide(true);
+
+          setTimeout(() => {
+            moveChecker = true;
+            if (index === 0) {
+              index = newSlideInnerContainer.childElementCount - 2;
+              moveSlide(false);
+            }
+          }, 100;
+        }
+      });
+
+      function moveSlide(transition) {
+        if (transition) {
+          newSlideInnerContainer.style.transition = `1s`;
+        } else {
+            newSlideInnerContainer.style.transition = `0s`;
+        }
+
+        newSlideInnerContainer.style.transform = `translateX(-${
+          index * 슬라이드너비
+        }vw)`;
+      }
+
+
+    </script>
 
 
 
