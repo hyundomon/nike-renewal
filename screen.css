@@ -1,0 +1,155 @@
+#nike-app {  
+    padding-top: 150px;
+}
+.iphone-and-screen {
+    position: relative;
+}
+
+.iphone-whole-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.screen-frame {
+    display: flex;
+    width: 274px;
+    height: 590px;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 121px;
+    left: 281px;
+    transition: 1s;
+
+    animation-name: apps-ani;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.screen-frame:hover {
+    animation-play-state: paused; 
+    /* 호버시 마우스 올리면 멈추는거 어케하는지 ㅁ루어보기!! */
+    /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
+}
+
+@keyframes apps-ani {
+    from{
+        margin-left: 0;
+
+    }
+    to{
+        margin-left: -274px;
+    }
+}
+
+
+.iphone-screen-whole-wrapper {
+    display: flex;
+    transform: translateX(0px);
+    transition: 1s;
+    /* 나중에 0px 랑 -274px로 지정해주기!!**** */
+}
+
+.iphone-frame {
+    z-index: 2;
+    position: relative;
+}
+
+.iphone-frame img {
+    width: 660px;
+    height: 980px;
+}
+
+.background {
+    width: 274px;
+    height: 590px;
+    z-index: 1;
+}
+
+.qr-code {
+    width: 130px;
+    height: 130px;
+}
+
+.phone-wrapper1, .phone-wrapper2 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+}
+
+.app-info-background-container {
+    background-color: rgba(42, 42, 42, 0.6);
+    font-family: 'Noto Sans KR';
+    color: var(--main-white);
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 30px 18px;
+    width: 225px;
+    height: 280px;
+}
+
+.qr-app-info {
+    width: 225px;
+    height: 460PX;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app-name {
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.app-info {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.app-icon img {
+    width: 58px;
+    height: 58px;
+}
+
+.nike-apps-text {
+    width: 750px;
+    height: 550px;
+    margin: auto 0;
+}
+
+.nike-apps-text h2 {
+    font-family: "Futura Std";
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.nike-apps-text .title {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.nike-apps-text .recommend {
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 40px;
+}
+
+.nike-apps-text a {
+    font-size: 22px;
+    width: 120px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    text-align: center;
+}

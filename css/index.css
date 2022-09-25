@@ -460,15 +460,11 @@ h2 .orange {
 }
 
 .new-slide-inner-container a {
-    width: 184px;
-    height: 54px;
     border-radius: 30px;
     background-color: var(--main-white);
     font-size: 26px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 30px;
 }
 
 #best {
@@ -515,6 +511,8 @@ a {
 
 .item-text {
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .banner {
@@ -527,8 +525,7 @@ a {
 }
 
 .buy-button {
-    width: 100px;
-    height: 40px;
+    padding: 10px 20px;
     border-radius: 30px;
     background-color: #ffffff70;
     position: absolute; 
@@ -537,9 +534,6 @@ a {
     transform: translate(-50%,-50%);
     font-size: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
     transition: 0.2s;
 }
@@ -632,17 +626,12 @@ h4 {
 }
 
 .event-more {
-    font-size: 18px;
-    /* 폰트 크이 20인데 더 나은거로 정해서 피그마까지 수정하기!! */
-    width: 150px;
-    height: 40px;
+    font-size: 22px;
+    padding: 15px 30px;
     border-radius: 30px;
     color: var(--main-white);
     background-color: var(--main-black);
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .event-text p {
@@ -675,16 +664,13 @@ h4 {
 }
 
 .join-member {
-    font-size: 22px;
-    width: 170px;
-    height: 50px;
+    font-size: 24px;
+    width: 140px;
+    padding: 15px 30px;
     border-radius: 30px;
     color: var(--main-white);
     background-color: var(--main-black);
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -741,12 +727,36 @@ h4 {
     display: flex;
     width: 274px;
     height: 590px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     top: 121px;
     left: 281px;
     transition: 1s;
+
+    animation-name: apps-ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out; 
 }
+
+.screen-frame :hover {
+    animation-play-state: paused; 
+    /* 호버시 마우스 올리면 멈추는거 어케하는지 ㅁ루어보기!! */
+    /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
+}
+
+@keyframes apps-ani {
+    from{
+        margin-left: 0;
+
+    }
+    to{
+        margin-left: -274px;
+    }
+}
+
 
 .iphone-screen-whole-wrapper {
     display: flex;
@@ -848,15 +858,12 @@ h4 {
 
 .nike-apps-text a {
     font-size: 22px;
-    width: 170px;
-    height: 50px;
+    width: 120px;
+    padding: 15px 30px;
     border-radius: 30px;
     color: var(--main-white);
     background-color: var(--main-black);
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
