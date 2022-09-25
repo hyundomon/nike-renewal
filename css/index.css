@@ -507,6 +507,41 @@ a {
     animation-timing-function: ease-in-out; 
 }
 
+.screen-frame :hover {
+    animation-play-state: paused; 
+    /* 호버시 마우스 올리면 멈추는거 어케하는지 ㅁ루어보기!! */
+    /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
+}
+
+@keyframes best-ani {
+    from{
+        margin-left: 0;
+
+    }
+    to{
+        margin-left: -678px;
+    }
+}
+
+.best-frame {
+    width: 1216px;
+    height: 632px;
+}
+
+.item-pic, .item-text {
+    background-color: var(--gray2);
+}
+
+.item-pic {
+    position: relative;
+}
+
+.item-text {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
 .item-pic:nth-child(1) {
     order: 1;
 }
@@ -555,20 +590,6 @@ a {
 }
 .item-text:nth-child(16) {
     order: 8;
-}
-
-.item-pic, .item-text {
-        background-color: var(--gray2);
-}
-
-.item-pic {
-    position: relative;
-}
-
-.item-text {
-    padding: 16px;
-    display: flex;
-    align-items: center;
 }
 
 .banner {
@@ -789,7 +810,7 @@ h4 {
     left: 281px;
     transition: 1s;
 
-    animation-name: best-ani;
+    animation-name: apps-ani;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -803,7 +824,7 @@ h4 {
     /* 오버플로우 위에 주면, 다음화면이 하얀 화면으로 넘어감ㅠㅠㅠㅠ */
 }
 
-@keyframes best-ani {
+@keyframes apps-ani {
     from{
         margin-left: 0;
 
