@@ -499,12 +499,12 @@ a {
     grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
 
     animation-name: best-ani;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 5s;
     animation-timing-function: ease-in-out; 
 }
+
 
 @keyframes best-ani {
     from{
@@ -516,15 +516,20 @@ a {
     }
 }
 
+.best-container:hover{
+    animation-play-state: paused;
+}
+
 .item-set{
     margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .item-set:hover {
     box-shadow: 7px 7px 7px gray;
 }
-
-/* 강사님!!이거 마우스 호버주는거 자바로 해야하나요?????*******/
 
 .item-pic, .item-text {
     background-color: var(--gray2);
@@ -542,7 +547,6 @@ a {
     padding: 16px;
     display: flex;
     align-items: center;
-    margin-top: 24px;
 }
 
 .banner {
