@@ -285,7 +285,6 @@ h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
-    /* margin-right: 8px;    이거 왜 안먹히는지!!?물어보기 */
 }
 
 .snkrs-title > span {
@@ -316,7 +315,6 @@ h1 {
     /* transition: 1s;
     opacity: 0; 
     오퍼시티를 체크박스에 따라서 넣야줘야한다!! */
-    
 }
 
 .name {
@@ -386,6 +384,9 @@ h2 .orange {
     color: var(--main-orange);
 }
 
+.new-wrapper {
+    overflow: hidden;
+}
 .new-slide-inner-container {
     display: flex;
     transition: 1s;
@@ -491,12 +492,8 @@ a {
     text-decoration: none;
 }
 
-.grid-best-container {
-    display: grid;
-    grid-template-columns: repeat(8, 304px);
-    grid-template-rows: 304px 304px;
-    gap: 24px 24px;
-    position: relative;
+.best-container {
+    display: flex;
 
     /* grid-template-columns: repeat(auto-fill, minmax(12.5%, auto));
     grid-template-rows: repeat(auto-fill, minmax(12.5%, auto)); */
@@ -519,68 +516,33 @@ a {
     }
 }
 
+.item-set{
+    margin: 0 12px;
+}
+
+.item-set:hover {
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* 강사님!!이거 마우스 호버주는거 자바로 해야하나요?????*******/
+
 .item-pic, .item-text {
     background-color: var(--gray2);
+    width: 304px;
+    height: 304px;
 }
 
 .item-pic {
     position: relative;
+    overflow: hidden;
 }
 
 .item-text {
+    box-sizing: border-box;
     padding: 16px;
     display: flex;
     align-items: center;
-}
-
-.item-pic:nth-child(1) {
-    order: 1;
-}
-.item-pic:nth-child(3) {
-    order: 10;
-}
-.item-pic:nth-child(5) {
-    order: 3;
-}
-.item-pic:nth-child(7) {
-    order: 12;
-}
-.item-pic:nth-child(9) {
-    order: 5;
-}
-.item-pic:nth-child(11) {
-    order: 14;
-}
-.item-pic:nth-child(13) {
-    order: 7;
-}
-.item-pic:nth-child(15) {
-    order: 16;
-}
-
-.item-text:nth-child(2) {
-    order: 9;
-}
-.item-text:nth-child(4) {
-    order: 2;
-}
-.item-text:nth-child(6) {
-    order: 11;
-}
-.item-text:nth-child(8) {
-    order: 4;
-}
-.item-text:nth-child(10) {
-    order: 13;
-}
-.item-text:nth-child(12) {
-    order: 6;
-}
-.item-text:nth-child(14) {
-    order: 15;
-}
-.item-text:nth-child(16) {
-    order: 8;
+    margin-top: 24px;
 }
 
 .banner {
