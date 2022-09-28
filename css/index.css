@@ -259,16 +259,24 @@ h1 {
     z-index: -1;
 }
 
-.slide-button-wrap input:checked ~ label .button {
+#check:checked ~ .slide-button-wrap label .button {
     background-color: var(--gray3);
 }
 
-.slide-button-wrap input:checked ~ label .button p {
+#check:checked ~ .slide-button-wrap label .button p {
     opacity: 1;
 }
 
-.slide-button-wrap input:checked ~ label .button .inside {
+#check:checked + .slide-button-wrap .inside {
     left: 170px;
+}
+
+#check:checked ~ .snkrs-whole-container .snkrs-incoming-wrapper{
+    display: none;
+}
+
+#check:checked ~ .snkrs-whole-container .snkrs-upcoming-wrapper{
+    display: flex;
 }
 
 .snkrs-whole-container {
@@ -312,10 +320,14 @@ h1 {
     text-align: center;
     box-sizing: border-box;
     margin: 0 auto;
-    position: absolute;
+    /* position: absolute; */
     /* transition: 0.2s;
     opacity: 0; 
     오퍼시티를 체크박스에 인커밍 업커밍 두곳에 다 넣어서 오퍼시티로 보여줬다가 안보여줬다가 할 수 있음 따라서 넣야줘야한다!! */
+}
+
+.snkrs-upcoming-wrapper {
+    display: none;
 }
 
 /* 이거 고쳐주기!!!************ */
@@ -512,6 +524,7 @@ a {
     text-decoration: none;
 }
 
+
 .best-container {
     display: flex;
 
@@ -525,6 +538,9 @@ a {
     animation-timing-function: ease-in-out; 
 }
 
+.item-set:nth-of-type(2n) .item-pic {
+    order: 1;
+}
 
 @keyframes best-ani {
     from{
@@ -790,6 +806,14 @@ h4 {
 
 
 
+.screen-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
 @keyframes apps-ani {
     from{
         transform: translateX(0);
@@ -836,6 +860,8 @@ h4 {
 .iphone-frame img {
     width: 660px;
     height: 980px;
+    position: relative;
+    z-index: 0;
 }
 
 .background {
@@ -1020,4 +1046,9 @@ footer {
 .protect-safe {
     display: inline;
     text-decoration: underline;
+}
+
+
+.pause {
+    animation-play-state: paused;
 }
