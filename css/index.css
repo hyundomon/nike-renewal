@@ -270,6 +270,7 @@ h1 {
 .slide-button-wrap input:checked ~ label .button .inside {
     left: 170px;
 }
+
 .snkrs-whole-container {
     width: 1216px;
     margin: auto;
@@ -312,9 +313,28 @@ h1 {
     box-sizing: border-box;
     margin: 0 auto;
     position: absolute;
-    /* transition: 1s;
+    /* transition: 0.2s;
     opacity: 0; 
-    오퍼시티를 체크박스에 따라서 넣야줘야한다!! */
+    오퍼시티를 체크박스에 인커밍 업커밍 두곳에 다 넣어서 오퍼시티로 보여줬다가 안보여줬다가 할 수 있음 따라서 넣야줘야한다!! */
+}
+
+/* 이거 고쳐주기!!!************ */
+/* .snkrs-incoming-wrapper {
+    opacity: 0;
+    transition: 0.2s
+}  */
+
+/* .snkrs-upcoming-wrapper {
+    opacity: 0;
+    transition: 0.2s;
+} */
+
+.snkrs-upcoming-wrapper {
+    display: none;
+}
+
+input#check:checked + .snkrs-upcoming-wrapper {
+    display: block;
 }
 
 .name {
