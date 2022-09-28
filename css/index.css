@@ -212,7 +212,7 @@ h1 {
     display: none;
 }
 
-.slide-button-wrap .button {
+.slide-toggle-wrap .toggle {
     position: relative;
     width: 350px;
     height: 50px;
@@ -227,7 +227,7 @@ h1 {
     z-index: -2;
 }
 
-.slide-button-wrap .button p {
+.slide-toggle-wrap .toggle p {
     line-height: 50px;
     color: var(--main-black);
     transition: all 0.2s;
@@ -243,7 +243,7 @@ h1 {
     폰트 이거 물어봐보기!!! */
 }
 
-.slide-button-wrap .button .inside {
+.slide-toggle-wrap .toggle .inside {
     position: absolute;
     top: 50%;
     left: 1px;
@@ -259,15 +259,15 @@ h1 {
     z-index: -1;
 }
 
-#check:checked ~ .slide-button-wrap label .button {
+#check:checked ~ .slide-toggle-wrap label .toggle {
     background-color: var(--gray3);
 }
 
-#check:checked ~ .slide-button-wrap label .button p {
+#check:checked ~ .slide-toggle-wrap label .toggle p {
     opacity: 1;
 }
 
-#check:checked + .slide-button-wrap .inside {
+#check:checked + .slide-toggle-wrap .inside {
     left: 170px;
 }
 
@@ -278,6 +278,15 @@ h1 {
 #check:checked ~ .snkrs-whole-container .snkrs-upcoming-wrapper{
     display: flex;
 }
+
+label {
+    cursor: pointer;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 .snkrs-whole-container {
     width: 1216px;
@@ -320,26 +329,11 @@ h1 {
     text-align: center;
     box-sizing: border-box;
     margin: 0 auto;
-    /* position: absolute; */
-    /* transition: 0.2s;
-    opacity: 0; 
-    오퍼시티를 체크박스에 인커밍 업커밍 두곳에 다 넣어서 오퍼시티로 보여줬다가 안보여줬다가 할 수 있음 따라서 넣야줘야한다!! */
 }
 
 .snkrs-upcoming-wrapper {
     display: none;
 }
-
-/* 이거 고쳐주기!!!************ */
-/* .snkrs-incoming-wrapper {
-    opacity: 0;
-    transition: 0.2s
-}  */
-
-/* .snkrs-upcoming-wrapper {
-    opacity: 0;
-    transition: 0.2s;
-} */
 
 .snkrs-upcoming-wrapper {
     display: none;
@@ -422,7 +416,7 @@ h2 .orange {
 .new-slide-inner-container {
     display: flex;
     transition: 1s;
-    transform: translateX(-00vw);
+    /* transform: translateX(-00vw); */
     /* 나중에 -100 -200 -300 으로 자바에서 넣어줄것임!! */
 }
 
@@ -1052,3 +1046,23 @@ footer {
 .pause {
     animation-play-state: paused;
 }
+
+/* 라디오 단추!!!!!! */
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 20px;
+    /* height: 30%; 로 줘도 되는지!!???****/
+  }
+  .radio {
+    background-color: gray;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .radio.selected {
+    background-color: red;
+  }

@@ -91,9 +91,9 @@
 
     <section id="snkrs">
         <input type="checkbox" class="sr-only" id="check">
-        <div class="slide-button-wrap">
+        <div class="slide-toggle-wrap">
             <label for="check">
-                <div class="button">
+                <div class="toggle">
                     <p>In Stock <span>Upcoming</span></p>
                     <div class="inside"></div>
                 </div>
@@ -189,12 +189,6 @@
         <h2>What's <span class="orange">New</span></h2>
         
         <div class="new-wrapper">
-            <div class="button-container">
-                <a href="#"><img src="img/arrow_left.svg" alt="left-arrow"></a>
-                <a href="#"><img src="img/arrow_right.svg" alt="right-arrow"></a>
-                <!-- 여기에 아이콘?아니면 텍스트로 만든건 어케만드나요? -->
-                <!-- 여기에 아이콘 넣으면 되나요? -->
-            </div>
 
             <div class="new-slide-wrapper">
                 <!-- 수정함이거 위에 스랄이드 랩퍼 -->
@@ -291,6 +285,13 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="#" class="new-left-arrow"><img src="img/arrow_left.svg" alt="left-arrow"></a>
+                <a href="#" class="new-right-arrow"><img src="img/arrow_right.svg" alt="right-arrow"></a>
+                <!-- 여기에 아이콘?아니면 텍스트로 만든건 어케만드나요? -->
+                <!-- 여기에 아이콘 넣으면 되나요? -->
             </div>
         </div>
     </section>
@@ -536,6 +537,9 @@
                         </div>
                     </li>
                 </ul>    
+                <div class="radio-container">
+                    <div class="radio"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -736,6 +740,7 @@
     </footer>
 
 <script src="index.js"></script>
+
 
 
 
