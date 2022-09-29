@@ -412,7 +412,15 @@ h2 .orange {
 
 .new-wrapper {
     overflow: hidden;
+    /* 오버플로우 히든 여기에 주는지 밑에에 주는지 물어보기!!!!!!**** */
 }
+.new-slide-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 700px;
+    /* overflow: hidden; */
+}
+
 .new-slide-inner-container {
     display: flex;
     transition: 1s;
