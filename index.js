@@ -16,89 +16,48 @@ function stopPhoneSlide() {
 }
 
 function newSlide() {
-    const newSlideWrapper = document.querySelector(`.new-slide-wrapper`);
     const newSlideInnerContainer = document.querySelector(`.new-slide-inner-container`);
     const prevButton = document.querySelector(`.new-left-arrow`);
     const nextButton = document.querySelector(`.new-right-arrow`);
 
-    let 이동거리 = 0;
+    let moveDistance = 0;
 
     nextButton.addEventListener('click',() => {
         
-        if(이동거리 === 300) {
-            이동거리 = 0;
+        if(moveDistance === 300) {
+            moveDistance = 0;
         } else {
-            이동거리 = 이동거리 + 100;
+            moveDistance = moveDistance + 100;
         }
-        newSlideInnerContainer.style.transform = `translateX(-${이동거리}vw)`
+        moveSlide(moveDistance);
     });
-
+    
     prevButton.addEventListener('click',() => {
         
-        if(이동거리 === 0) {
-            이동거리 = 300;
+        if(moveDistance === 0) {
+            moveDistance = 300;
         } else {
-            이동거리 = 이동거리 - 100;
+            moveDistance = moveDistance - 100;
         }
-        newSlideInnerContainer.style.transform = `translateX(-${이동거리}vw)`
+        moveSlide(moveDistance);
     });
+
+    function moveSlide(moveDistance) {
+        newSlideInnerContainer.style.transform = `translateX(-${moveDistance}vw)`
+        // 펑션으로 묶어서 이해하기 쉽게 넣어준것임!! 이동거리들은 이름이 달라도되고 같아도됌 상관없음 상황에따라 다름
+        // 펑션부분과 위에 식에 move이거 많은거 그거는 이름을 다르게 해줘도 된다 상황에 따라서
+    }
+
+    let div = document.createElement(`.new-slide-inner-container`);
 }
 
+// 양쪽 끝 복사본 만들고, 끝에서 1(복사본)로 넘어가고나서 트렌지션 빼주고 진짜 1번으로 옮기기
+
+// 복사본 가져온다음에 앞뒤에 넣어주기
+
+// function 은 가능한 맨 아래로, const let은 위로!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function newSlide () {
-//     const newSlideInnerContainer = document.querySelector(`.new-slide-inner-container`);
-
-//     const prevButton = document.querySelector(`.new-left-arrow`);
-//     const nextButton = document.querySelector(`new-right-arrow`);
-
-//     let index = 0;
-
-//     nextButton.addEventListener('click', () => {
-//         if(index === 300) {
-//             index = 0;
-//         } else {
-//             index = index + 100;
-//         }
-//         newSlideInnerContainer.style.transform = `translateX(-${index}vw)`
-//     });
-
-//     prevButton.addEventListener('click', () => {
-//         if(index === 0) {
-//             index = 300;
-//         } else {
-//             index = index - 100;
-//         }
-//         newSlideInnerContainer.style.transform = `translateX(-${index}vw)`
-//     });
-// }
 
 
 
