@@ -71,6 +71,8 @@ function newSlide() {
 
 
 
+
+
 // function newSlide () {
 //     const newSlideInnerContainer = document.querySelector(`.new-slide-inner-container`);
 

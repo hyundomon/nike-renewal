@@ -526,6 +526,9 @@ a {
     text-decoration: none;
 }
 
+.best-frame {
+    overflow: hidden;
+}
 
 .best-container {
     display: flex;
