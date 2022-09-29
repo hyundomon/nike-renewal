@@ -25,7 +25,7 @@ function newSlide() {
 
     nextButton.addEventListener('click',() => {
         
-        if(이동거리 === 200) {
+        if(이동거리 === 300) {
             이동거리 = 0;
         } else {
             이동거리 = 이동거리 + 100;
@@ -36,7 +36,7 @@ function newSlide() {
     prevButton.addEventListener('click',() => {
         
         if(이동거리 === 0) {
-            이동거리 = 200;
+            이동거리 = 300;
         } else {
             이동거리 = 이동거리 - 100;
         }
